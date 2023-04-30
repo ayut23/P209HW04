@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Calories</title>
-	
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<form>
@@ -10,22 +10,25 @@
 		  <legend>Track Calories</legend>
 		  <br><br>
 		  <label for="foodName">
-			Food name
-			<input type="text" id="fname" name="fname">
+			Food name:
+			<input type="text" id="fname" name="fname" required>
 		  </label><br><br>
 		  <label for="Calories">
-			Calories
-			<input type="text" id="calorie" name="calorie">
+			Calories:
+			<input type="number" id="calorie" name="calorie" required>
 		  </label><br>
 		</fieldset>
 		<br><br>	
 		<input type="submit" value="Calculate">
 	  </form>
 	  <br><br>
+	  <div class="caldiv">
 	  <label for="Total Calories">
-		Total Calories
-		<input type="text" id ="tCalorie" name="tCalorie">
+		Total Calories:
+		<br>
+		<input type="number" id ="tCalorie" name="tCalorie">
 		</label><br>
+		</div>
 </body>
 
 <script src="script.js"></script>

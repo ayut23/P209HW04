@@ -33,14 +33,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           console.log("Index: " + i + ", Food name: " + track.entries[i].foodname + ", Calories: " + track.entries[i].calorie);
         }
 
-        tc.value = this.totalCal;
-
-        
-      }
-    };
-  
+        tc.value = this.totalCal; 
+      },
+     };
     var submitBtn = document.querySelector("input[type='submit']");
     submitBtn.addEventListener("click", track.addFoodCal.bind(track));
-  
+
   });
   
